@@ -1,5 +1,5 @@
 # Student Management System
-
+github deployment link:https://nazliiciplak.github.io/StudentManagementSystem/
 
 
 This project is a web-based Student Management System with functionalities to manage courses, students, and their scores.
