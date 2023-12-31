@@ -1,0 +1,211 @@
+
+body {
+    font-family: Arial, sans-serif;  /* Set font family for the entire document */
+    margin: 0;  
+    padding: 0;  
+    background-color: rgb(222, 208, 185);  /* Set background color */
+}
+
+/* Styling for the navigation bar */
+.navbar {
+    background-color: rgb(237, 228, 213);  /* Set background color */
+    padding: 10px;  
+    display: flex;  
+    justify-content: space-between;  /* Space between items */
+    align-items: center;  
+    height: 70px;  }
+
+/* Styling for the logo in the navigation bar */
+.navbar img {
+    height: 40px;  /* Set height for the logo */
+}
+
+/* Apply custom styles */
+.welcome-message {
+    font-size: 20px;  
+    font-weight: bold;  /* Set font weight */
+    color: #333; 
+    text-align: center;  
+    color: rgb(37, 35, 33);  /* Set text color */
+}
+
+/* Styling for the main container */
+.main-container {
+    display: flex;  
+}
+
+/* Styling for the left panel */
+.leftside {
+    width: 200px;  /* Set width */
+    background-color: rgb(237, 228, 213);  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Add box shadow */
+    height: 740px;  /* Set height */
+}
+
+/* Styling for items in the left panel */
+.side-item {
+    padding: 10px;  /* Add padding */
+    border-bottom: 1px solid gray;  /* Add bottom border */
+    cursor: pointer; 
+    height: 40px;  
+}
+
+.side-item p {
+    font-weight: bold;  /* Set font weight for paragraph inside side-item */
+}
+
+.side-item:last-child {
+    border-bottom: none;  /* Remove bottom border for the last item */
+}
+
+/* Styling for the right panel */
+.rightside {
+    display: flex;  /* Use flexbox for layout */
+    flex-wrap: wrap;  
+    justify-content: space-around;  
+    margin-top: 30px;  /* Add top margin */
+}
+
+/* Styling for the boxes in the right panel */
+.box {
+    display: flex; 
+    width: 300px; 
+    height: 100px;  /* Set height */
+    background-color: rgb(215, 185, 140);  /* Set background color */
+    margin-left: 20px;  
+    border-radius: 10px;  
+}
+
+/* Hide the box when it has the 'hidden' class */
+.box.hidden {
+    display: none;  
+}
+
+/* Styling for images inside the box */
+.box img {
+    width: 30%;  
+    height: 80%;  
+    display: block;  /* Display as block element */
+    margin-bottom: 0px; 
+    margin-top: 20px; 
+}
+
+/* Styling for text inside the box */
+.box p {
+    margin-left: 90px;  /* Set left margin */
+    margin-top: 50px;  
+    font-size: 20px;  
+    font-weight: bold; 
+    text-align: center;  /* Center align text */
+}
+
+/* Styling for the form container */
+.form-container {
+    display: flex;  /* Use flexbox for layout */
+    flex-wrap: wrap;  
+    justify-content: space-around;  /* Space between items */
+    margin: 10px;  /* Add margin */
+}
+
+/* Styling for forms */
+form {
+    background-color: rgb(237, 228, 213);  /* Set background color */
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Add box shadow */
+    padding: 20px; 
+    width: 300px;  
+    margin: 50px; 
+}
+
+/* Styling for labels in forms */
+label {
+    display: block;  
+    margin-bottom: 5px;  /* Add bottom margin */
+    color: #333; 
+}
+
+/* Styling for input and select elements in forms */
+input, select {
+    width: 100%; 
+    padding: 5px;  
+    margin-bottom: 16px;  /* Add bottom margin */
+    box-sizing: border-box;  /* Include padding and border in the total width */
+}
+
+/* Styling for buttons */
+button {
+    background-color: peru;  /* Set background color */
+    color: #fff;  
+    padding: 10px; 
+    border: none; 
+    border-radius: 4px;  
+    cursor: pointer;  /* Set cursor to pointer */
+    width: 100%;  /* Set width */
+    margin-bottom: 10px;  /* Add bottom margin */
+}
+
+/* Styling for tables */
+table {
+    background: peru;  /* Set background color */
+    margin: 5px; 
+    width: 80%; 
+    color: rgb(244, 241, 237);  /* Set text color */
+}
+
+/* Styling for table cells and headers */
+td, th {
+    border: 1px solid white;  /* Add border */
+    border-spacing: 0px;  /* Set border spacing */
+    margin: 0px;  
+}
+
+/* Add responsiveness for mobile and desktop views */
+@media screen and (max-width: 768px) {
+    .navbar img[src*="university.png"] {
+        display: none;  /* Hide a specific image when screen width is less than 768 pixels */
+    }
+    .navbar {
+        flex-direction: column;  /* Use column layout on mobile */
+        align-items: center; 
+        text-align: center;  /* Center align text */
+        height: 80px;  
+    }
+
+    .navbar img {
+        margin-bottom: 10px;  /* Add bottom margin for logos and icons */
+    }
+
+    .navbar > div {
+        margin-bottom: 10px;  /* Add bottom margin for the welcome message and icon group */
+    }
+    .main-container {
+        flex-direction: column;  /* Use column layout on mobile */
+    }
+
+    .leftside {
+        width: 100%;  /* Set width to 100% on mobile */
+    }
+
+    .rightside {
+        display: none;  /* Hide the right side on mobile */
+    }
+
+    .box {
+        width: 100%;  /* Set width to 100% on mobile */
+        margin-left: 0;  
+        margin-bottom: 20px;  /* Add bottom margin */
+    }
+
+    form {
+        width: 60%;  /* Set width to 60% on mobile */
+        margin: 20px 0;  
+    }
+    .table{
+        width: 1%;  /* Set width to 40% on mobile */
+    }
+    .table th, .table td {
+        font-size: 9px; /* Yazı boyutunu küçült */
+        padding: 8px; /* Hücre içi boşlukları azalt */
+      }
+    
+}
